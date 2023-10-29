@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>berk ile html</title>
+    </head>
+    <body style="background-color:rgb(128, 128, 128)">
+        <h1 title="Mouse'un burada" style="color:rgb(216, 176, 211)"><strong>Global Attributes, Styles, Fonts and Others.</strong></h1>
+        <!--title komutunu da şuraya sıkıştırayım-->
+    <hr/>
+    <p>Genel etiketlerin bir çoğunu kullanmışım fakat yine de belirtmekte fayda var;</p><br/>
+    <ol>
+        <li>lang</li>
+            <p>->kodun, sitenin dil içeriğini bildirir. "erişilebilirliği/etkileşimi arttırır"</p>
+        <li>class</li>
+            <p>->sayfada bir sınıf tanımlar ve sınıf için belirlediğimiz kural vb. sadece o sınıf için yaptırtıran etiket</p>
+        <li>text-transform</li>
+            <p>->Metinlerin görünümünü düzenlemek için kullanılan etiket.<br/>
+            ->capitalize(sadece baş harfleri büyük), lowercase(metnin hepsini küçük harf) ve uppercase(metnin hepsini büyük harf)
+            </p>
+        <li>style</li>
+            <p>
+        ->satır içi CSS tanımı yapar. Bu kod öğenin rengi, boyutu, kenarlık gibi görsel özellik içindir<br/>
+        ->her websitenin arka planı beyaz, yazısı siyahtır. bu özellikle varsayılan değiştirilir.<br/>
+        ->Illa da body etiketine yazılmasına gerek yoktur, sadece beyaz ekrana kısık gözle bakmak istemedim.<br/>
+        <br/>
+        Örnek olarak şuan body'e ve h1'e atadığım style"background-color"/"color:"
+    </p>
+            <ul style="list-style-type:none">
+            <li>4.1. Color</li>
+            <p>herhangi bir etiketin önüne style ile beraber color yazılarak renk değiştirtir<br/>
+            RGB, Rengin ismi ve HEX kodu olmak üzere 3 adet gösterim biçimi
+            </p>
+            <li>4.2 Font</li>
+            <p>Metnin yazı tipi ile ilgilli değişikler için, style önüne yazılıyor her zamanki gibi</p>
+                <ul style="list-style-type:none">
+                <li>4.2.1. font-family komutu</li>
+                <p>->Metnin yazıtipini değiştirmek için</p>
+                <li>4.2.2. font-size/style/weight komutları</li>
+                <p>->size;<br/>
+                    3 farklı tipte etikete değer verebiliriz. Bunlar "px", "em" ve "%" olarak etiketin önüne ve style'dan sonra<br/>
+                    ->style;<br/>
+                    CSS özelliği ile yazı stili değiştirilebilir. normal, italic, oblique.. İnitial ve İnherit tüm html etiketleri için kullanılabilir.<br/>
+                    ->weight<br/>
+                    CSS özelliği ile metin kalın yapılabilir. normal, bold, bolder, Lighter.. 100, 200... 900 e kadar değerler alabilir
+                </p></ul>
+                <p style="font-family:Verdana; font-size:24px; font-weight: bold; font-size: inherit;">*Her bir font komutu ile deneme</p>
+            </ul>
+    </ol>
+    </body>
+</html>
+
+
+
+
