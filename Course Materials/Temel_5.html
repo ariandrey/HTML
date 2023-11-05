@@ -1,0 +1,48 @@
+<DOCTYPE html>
+    <head>
+    <meta charset="utf-8">
+    <title>berk ile html</title>
+
+    <style>
+        .buyuk-harf {
+            text-align:capitalize;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .hizalama {
+            text-align: center;
+            text-transform:;
+            text-decoration:underline;
+        }
+        .sol {
+            text-align:left;
+            text-transform: lowercase;
+            text-decoration:line-through;
+        }
+        .sağ {
+            text-align:right;
+            text-transform: initial;
+            text-decoration: overline;
+        }
+        
+        .justify-ne{
+            text-align:justify;
+            text-transform: inherit;
+            text-decoration: inherit;
+        }
+    </style>
+    </head>
+
+
+    <body style="background-color:rgba(91, 25, 100, 0.788)">
+        <h1 style="background-color: rgb(169, 120, 233); color: rgb(20, 4, 94);"><strong>Text transform</strong></h1>
+            <p class="buyuk-harf">buyuk harf class'ı işlendi</p><br/>
+            <p class="hizalama">center ve text transform'u boş</p><br/>
+            <p class="sol">sola doğru(e bu zaten klasik)</p><br/> <!--sadece parantez içine lowercase uygulamak istedim fakat javascript gerekiyormus. (güncellenilebilir)-->
+            <p class="sağ">sağa doğru ve overline*</p><br/>
+            <p class="justify-ne">Bu paragrafı düzgün biçimlendirir. Metin içeriği tamamen dengeli bir şekilde hizalanmıştır ve paragrafın genişliği belirli bir sınırı var 
+            </p><br/>
+        <div class="hizalama buyuk-harf">iki class aynı anda div etiketi ile sağlandı</div> <!--iki class'ı aynı anda kullanmak için div etiketi-->
+        <!--iki adet class'ın text transform'ları birbirine çakışır. none yazılsa bile. direk boşluk bırak-->
+    </body>
+</html>
