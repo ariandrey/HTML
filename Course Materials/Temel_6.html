@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>berk ile html</title>
+        
+        <style>
+        .justify {                  
+            
+            text-align:justify;
+        }
+        .body {
+            background-color: #ff0000; /*bundan vazgeçtim*/
+        }
+
+        .background-image {
+            background-image:url('https://cache.umusic.com/_sites/_halo/arianagrande/images/r6s.jpg'); /* Arka plan resmi dosyasının yolunu belirtin */
+            background-size:cover; /* resmin ekranı kaplamasını sağlar */
+            z-index:1; /* 1 atanan background image'in önüne başka resim için z-index:2; atamalıyım(?) */
+            position:absolute; /*genelde z-index ile kombine*/
+        }
+        </style>
+    </head>
+    <!--justify my fave-->
+
+    <body class="background-color background-image">
+        <h1 style="color:rgb(112, 99, 146)"><strong>Resim ekleme, link</strong></h1> <!--id etiketi ile başlıklara atama yapılabilir fakat bunu şuan tam bilmiyorsun-->
+        <hr/>
+        <map name="ariana-youtube-music">
+            <area shape="rect" coords="0,0,300,150" alt="ariana youtube-music" href="https://music.youtube.com/channel/UC0076UMUgEng8HORUw_MYHA" target="_blank"/>
+        </map>
+        <map name="ariana-spotify">
+            <area shape="rect" coords="0,0,150,150" alt="ariana spotify" href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR" target="?blank"/>
+        </map>
+        <p class="justify">
+        <figure>
+            <a>
+            <img src="https://lh3.googleusercontent.com/DU6Kpr5TYKcW6QHvMnsJau5_8QSuix8LCLtf5UEaziZZdXw8SxvcxJ9YWmVIQuzhg2R-MVHYgjdGCQ=w816-h340-p-l90-rj" alt="ariana youtube-music" style="float;width:300px;height:150px;" usemap="#ariana-youtube-music">
+            </a>
+            <figcaption>Ariana'nın Youtube Music Link</figcaption>
+        </figure>
+        <figure>
+            <a>
+            <img src="https://i.scdn.co/image/ab67616100005174cdce7620dc940db079bf4952" alt="ariana spotify" style="float;width:150px;height:150px;" usemap="#ariana-spotify">
+            </a>
+            <figcaption>Ariana'nın Spotify Link</figcaption>
+         </figure>
+        <!--float; yazının nerede olması gerektiği-->
+        <!--width="100px" height="200px"-->
+        <!--Her bir resim için website->network url'si alınıp yapıldı. kişinin verisi değiştikçe değişmesi gerekiyor(if i understand right)-->
+        </p>
+
+    </body>
+</html>
